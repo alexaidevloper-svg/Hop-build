@@ -1,0 +1,6 @@
+{
+  "name": "HopWeb Studio",
+  "description": "Mobile web development IDE and Android APK builder clone based on HopWeb with real file editor, WebView preview, Eruda developer console, PHP server configuration, and APK packaging.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
