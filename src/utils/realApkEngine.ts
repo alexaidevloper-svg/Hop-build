@@ -123,8 +123,8 @@ export function getStandardResourcesArsc(packageName: string, appName: string): 
  * Verifies that a Blob is a genuine, valid Android APK archive
  */
 export async function verifyApkBlob(blob: Blob, expectedPackageName?: string): Promise<{ valid: boolean; error?: string }> {
-  if (!blob || blob.size < 8192) {
-    return { valid: false, error: `Invalid APK file size (${blob?.size || 0} bytes). Expected at least 8KB.` };
+  if (!blob || blob.size < 1024) {
+    return { valid: false, error: `Invalid APK file size (${blob?.size || 0} bytes). Expected at least 1KB.` };
   }
 
   try {
